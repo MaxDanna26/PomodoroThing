@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    flex-direction: column;
+
+    object-fit: cover; /* Similar a background-size: cover; pero en imágenes */
+
+    background-image: url(/src/Images/backgroundImage.jpg);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+    background-attachment: fixed; /* Opcional, cuidado con móviles */
+  }
+  
+  @media (max-width: 768px) {
+    body {
+        background-image: url(/src/Images/backgroundImage.jpg);
+      background-attachment: scroll; /* Desactivar fixed en móviles */
+    }
+
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 3rem 0 0 1rem;
+    width: 90%;
+    text-align: center;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 4rem;
+}
+
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.title{
+  font-size: 2rem;
+}
+
+.contadores{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
